@@ -1,0 +1,43 @@
+﻿item_nr,word_category,target_de,target_en,unrelated_distractor_de,unrelated_distractor_en,semantic_distractor_de,semantic_distractor_en,phonological_distractor_de,phonological_distractor_en
+1,noun,auge,eye,trommel,drum,nase,nose,kamm,comb
+2,verb,schweben,float,weinen,cry,springen,jump,schieben,push
+3,noun,möhre,carrot,uhr,clock,gurke,cucumber,bett,bed
+4,noun,ameise,ant,käse,cheese,vogel,bird,ball,ball
+5,verb,jonglieren,juggle,anfassen,touch,werfen,throw,verlieren,lose
+6,noun,elch,elk,skelett,skeleton,mammut,mammoth,kelch,goblet
+7,noun,chor,choir,tastatur,keyboard,orchester,orchestra,rohr,pipe
+8,verb,torkeln,stagger,backen,bake,hüpfen,hop,schnorcheln,snorkel
+9,verb,studieren,study,liegen,lie ,unterrichten,teach,marschieren,march
+10,verb,operieren,operate,rufen,call,impfen,vaccinate,spazieren,walk
+11,noun,ventilator,ventilator,teekanne,teapot,fächer,fan ,gartentor,garden gate
+12,verb,wählen,choose,bauen,build,überlegen,consider,schälen,peel
+13,noun,rucola,arugula,plakat,poster,rosenkohl,brussels sprouts,drakula,dracula
+14,verb,scheren,shear,begrüßen,greet,streicheln,caress,leeren,clear
+15,noun,giraffe,giraffe,auto,car,schnecke,snail,pizza,pizza
+16,noun,palme,palm tree,becher,cup,kaktus,cactus,(trink)halme,(drinking) straws
+17,verb,tadeln,rebuke,flüstern,whisper,loben,praise,radeln,cycle
+18,noun,ananas,pineapple,krawatte,tie,wassermelone,water melon ,gitarre,guitar
+19,verb,empfangen,receive,gießen,pour,verschicken,send,einfangen,capture 
+20,verb,verloben,engage,joggen,jog,heiraten,marry,vergeben,forgive
+21,noun,ozean,ocean,fabrik,factory,fluss,river,pelikan,pelican
+22,verb,faulenzen,laze,kochen,cook,spazieren,walk ,begrenzen,limit
+23,noun,gazelle,gazelle,astronaut,astronaut,reh,deer,libelle,dragonfly
+24,verb,liefern,deliver,trösten,comfort,holen,fetch,töpfern,make pottery
+25,noun,pfifferling,chanterelle,diamant,diamond,kastanie,chestnut,schmetterling,butterfly
+26,verb,dekorieren,decorate,lesen,read,werkeln,work,ignorieren,ignore 
+27,verb,bekennen,confess,ziehen,pull,verstecken,hide,verbrennen,burn
+28,noun,ruine,ruin,torwart,goalkeeper,festung,fortress,schiene,rail
+29,noun,labyrinth,labyrinth,stau,traffic jam,achterbahn,roller coaster,wirbelwind,whirlwind
+30,noun,orchidee,orchid,banner,banner,strauch,shrub,zehe,toe
+31,verb,schwanken,sway,malen,paint,drehen,turn,schenken,give (a present)
+32,noun,zucchini,zucchini,skateboard,skateboard,brokkoli,broccoli,bikini,bikini
+33,verb,türmen,pile up ,öffnen ,open,sammeln,collect,krümmen,bend
+34,verb,befreien,free / release,pusten,blow,fangen,catch,schreien,scream
+35,noun,kajak,kayak,bumerang,boomerang,segelboot,sailingboat,rucksack,backpack
+36,verb,abseilen,rappel,schreiben,write,schweben,float,beeilen,hurry
+37,verb,tuscheln,whisper / gossip,singen,sing,verpetzen,snitch,tuschen         ,paint in water colors / ink
+38,noun,hummer,lobster,mikroskop,microscope,krebs,crab,klammer,clip
+39,noun,nelke,carnation / pinks,kompass,compass,veilchen,violets,zelte,tents
+40,verb,betrachten,regard,telefonieren,call,zeigen ,show,bewachen,guard
+41,noun,flunder,flounder,pyramide,pyramid,orca,orca,holunder,elderberry
+42,noun,cello,cello,steg,landing bridge,harfe,harp,marshmallow,marshmallow

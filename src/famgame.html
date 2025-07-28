@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="./famgame.js" type="module" defer></script>
+    <!-- <link rel="stylesheet" href="famgame.css" /> -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="./logos/cipcip.svg" />
+    <link rel="icon" href="./logos/cipcip.svg" type="image/svg+xml" />
+    <title>FAMILIARIZATION GAME</title>
+  </head>
+
+  <body>
+    <div id="flex-wrapper" style="background-color: #f2f9ff" >
+      <div class="flex-item">
+        <h2
+          id="heading-fullscreen"
+          style="
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            text-align: center;
+            font-size: 2.5em;
+          "
+        >
+          <p>
+            Take as much time as you like. If your child
+            becomes restless or bored, you can take a short
+            break at any time.
+          </p>
+
+          <p>
+            If your child asks you for advice or is unsure, please tell
+            "Show me what you think". Everything your child answers is
+            great.
+          </p>
+
+          <p>
+            Please do not help your child with the tasks - after all, we want to learn
+            something about children!
+          </p>
+
+          <p>
+            Please click on "CONTINUE" now to activate full screen mode.
+          </p>
+        </h2>
+
+        <h2
+          id="heading-testsound"
+          style="
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            text-align: center;
+            display: none;
+            font-size: 2.5em;
+          "
+        >
+         <p>Have you just heard a brief tinkling noise?</p>
+
+          <p>
+            Great! If not, please click on the loudspeaker symbol,
+            to test your sound.
+          </p>
+
+          <p>
+            Please click on "CONTINUE" now to start playing.
+          </p>
+        </h2>
+
+        <div class="main-flex-sheet">
+          <div class="flex-sheet trials" style="display: none" >
+            <audio id="testsound" src="audio/testsound.mp3"></audio>
+          </div>
+
+          <div id="between-trials" class="flex-sheet">
+            <img
+              id="between-trials-background"
+              src="images/backgrounds/background_task.svg"
+              style="opacity: 0;"
+              />
+          </div>          
+
+          <!-- dist1: semantic distractor, dist2: phonological, dist3: unrelated -->
+          <div class="flex-sheet trials" style="display: none; height: 100%"> <!-- sistemare!!-->
+            <audio src="audio/start-audio.mp3"></audio>
+            <img
+                id="background"
+                src=""
+                style="opacity: 1; 
+                height: 100vh; 
+                width: 100%; 
+                margin-top: 0; 
+                position: absolute; 
+                top: 0; 
+                left: 0; 
+                z-index: -1;"
+            />
+            <div class="character" style="position: relative;">
+              <img
+              id="character"
+              class="upper-left"
+              src="images/agents/girl.svg"
+              style="opacity: 0; position: relative; z-index: 1;"
+              />
+            </div>
+            <div class="row">
+              <div id="object1">
+                <img
+                  class="object"
+                  data-word-category="dist2"
+                  src="images/objects/apple.svg"
+                  style="opacity: 0;"
+                />
+              </div>
+              <div id="object2">
+                <img
+                  id="continue-star"
+                  class="object"
+                  data-word-category="dist3"
+                  src="images/objects/star.svg"
+                  style="opacity: 0;"
+                />
+              </div>
+              <div id="object3">
+                <img
+                  class="object"
+                  data-word-category="dist1"
+                  src="images/objects/turtle.svg"
+                  style="opacity: 0;"
+                />
+              </div>
+            </div>
+              
+          </div>
+
+          <!-- FAMILIARIZATION TRIALS -->
+
+
+          <div class="flex-sheet trials mutex-noun" style="display: none; height: 100%"> 
+            <audio src="audio/N_zm_auge.mp3" muted></audio>
+            <img
+                id="background"
+                src="images/backgrounds/background_task.svg"
+                />
+            <div class="character" style="position: relative;">
+              <img
+              id="character"
+              class="upper-left"
+              src="images/agents/girl.svg"
+              style="opacity: 0; position: relative; z-index: 1;"
+              />
+            </div>
+            <div class="row">
+              <div id="object1">
+                <img
+                  class="object"
+                  data-word-category="dist2"
+                  src="images/objects/apple.svg"
+                />
+              </div>
+              <div id="object2">
+                <img
+                  class="object"
+                  data-word-category="dist3"
+                  src="images/objects/watermelon.svg"
+                />
+              </div>
+              <div id="object3">
+                <img
+                  class="object"
+                  data-word-category="target"
+                  src="images/objects/turtle.svg"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- MUTEX-->
+          <!-- nouns -->
+          <div class="flex-sheet trials adhocimp-ball" style="display: none; height: 100%"> 
+            <audio src="audio/N_zm_auge.mp3" muted></audio>
+            <img
+                id="background"
+                src="images/backgrounds/background_task.svg"
+                />
+            <div class="character" style="position: relative;">
+              <img
+              id="character"
+              class="upper-left"
+              src="images/agents/girl.svg"
+              style="opacity: 0; position: relative; z-index: 1;"
+              />
+            </div>
+            <div id= "row" class="row">
+              <div id="object1">
+                <img
+                  class="object"
+                  data-word-category="dist2"
+                  src="images/objects/flower.svg"
+                />
+              </div>
+              <div id="object2">
+                <img
+                  class="object"
+                  data-word-category="dist3"
+                  src="images/objects/fish.svg"
+                />
+              </div>
+              <div id="object3">
+                <img
+                  class="object"
+                  data-word-category="target"
+                  src="images/objects/banana.svg"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-sheet trials adhocimp-ball" style="display: none; height: 100%"> 
+            <audio src="audio/N_zm_auge.mp3" muted></audio>
+            <img
+                id="background"
+                src="images/backgrounds/background_task.svg"
+                />
+            <div class="character" style="position: relative;">
+              <img
+              id="character"
+              class="upper-left"
+              src="images/agents/girl.svg"
+              style="opacity: 0; position: relative; z-index: 1;"
+              />
+            </div>
+            <div id= "row" class="row">
+              <div id="object1">
+                <img
+                  class="object"
+                  data-word-category="dist2"
+                  src="images/objects/boy_B_shouting.gif"
+                  style="height: auto; width: 80%; margin-bottom: 10vh;"
+                />
+              </div>
+              <div id="object2">
+                <img
+                  class="object"
+                  data-word-category="dist3"
+                  src="images/objects/boy_C_running.gif"
+                  style="height: auto; width: 80%; margin-bottom: 10vh;"
+                />
+              </div>
+              <div id="object3">
+                <img
+                  class="object"
+                  data-word-category="target"
+                  src="images/objects/boy_A_novel1.gif"
+                  style="height: auto; width: 80%; margin-bottom: 10vh;"
+                />
+              </div>
+            </div>
+          </div>
+
+          
+          <!-- TYPICALITY IMPLICATURE-->
+
+          <div class="flex-sheet trials typic-imp" style="display: none; height: 100%"> 
+            <audio src="audio/N_zm_auge.mp3" muted></audio>
+            <img
+                id="background"
+                src="images/backgrounds/background_task.svg"
+                />
+            <div class="character" style="position: relative;">
+              <img
+              id="character"
+              class="upper-left"
+              src="images/agents/girl.svg"
+              style="opacity: 0; position: relative; z-index: 1;"
+              />
+            </div>
+            <div id= "row" class="row">
+              <div id="object1">
+                <img
+                  class="object"
+                  data-word-category="dist2"
+                  src="images/objects/glass.svg"
+                  style="height: auto; width: 50%; margin-bottom: 50px;"
+                />
+              </div>
+              <div id="object2">
+                <img
+                  class="object"
+                  data-word-category="target"
+                  src="images/objects/balloon.svg"
+                  style="height: auto; width: 50%; margin-bottom: 50px;"
+                />
+              </div>
+              <div id="object3">
+                <img
+                  class="object"
+                  data-word-category="dist1"
+                  src="images/objects/normal_bottle.svg"
+                  style="height: auto; width: 40%; margin-bottom: 50px;"
+                />
+              </div>
+            </div>
+          </div>
+          
+          <div class="flex-sheet trials typic-imp" style="display: none; height: 100%"> 
+            <audio src="audio/N_zm_auge.mp3" muted></audio>
+            <img
+                id="background"
+                src="images/backgrounds/background_task.svg"
+                />
+            <div class="character" style="position: relative;">
+              <img
+              id="character"
+              class="upper-left"
+              src="images/agents/girl.svg"
+              style="opacity: 0; position: relative; z-index: 1;"
+              /> 
+            </div>
+            <div id= "row" class="row">
+              <div id="object1">
+                <img
+                  class="object"
+                  data-word-category="dist2"
+                  src="images/objects/cat.svg"
+                  style="height: auto; width: 50%; margin-bottom: 50px;"
+                />
+              </div>
+              <div id="object2">
+                <img
+                  class="object"
+                  data-word-category="target"
+                  src="images/objects/watermelon.svg"
+                  style="height: auto; width: 40%; margin-bottom: 50px;"
+                />
+              </div>
+              <div id="object3">
+                <img
+                  class="object"
+                  data-word-category="dist1"
+                  src="images/objects/helicopter.svg"
+                  style="height: auto; width: 50%; margin-bottom: 50px;"
+                />
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Discourse continuity second exposure trial-->
+
+          <div class="flex-sheet trials disc-cont" style="display: none; height: 100%"> 
+            <audio src="audio/N_zm_auge.mp3" muted></audio>
+            <img
+                id="background"
+                src="images/backgrounds/background_task.svg"
+                />
+            <div class="character" style="position: relative;">
+              <img
+              id="character"
+              class="upper-left"
+              src="images/agents/girl.svg"
+              style="opacity: 0; position: relative; z-index: 1;"
+              />
+            </div>
+            <div id= "row" class="row">
+              <div id="object1">
+                <img
+                  class="object"
+                  data-word-category="dist2"
+                  src="images/objects/turtle.svg"
+                  style="height: auto; width: 50%; margin-bottom: 50px;"
+                />
+              </div>
+              <div id="object2">
+                <img
+                  class="object"
+                  data-word-category="dist3"
+                  src="images/objects/motorcycle.svg"
+                  style="height: auto; width: 40%; margin-bottom: 50px;"
+                />
+              </div>
+              <div id="object3">
+                <img
+                  class="object"
+                  data-word-category="target"
+                  src="images/objects/apple.svg"
+                  style="height: auto; width: 50%; margin-bottom: 50px;"
+                />
+              </div>
+            </div>
+          </div>
+          
+          <!-- Discourse continuity third exposure trials-->
+
+          <div class="flex-sheet trials typic-imp" style="display: none; height: 100%"> 
+            <audio src="audio/N_zm_auge.mp3" muted></audio>
+            <img
+                id="background"
+                src="images/backgrounds/background_task.svg"
+                />
+            <div class="character" style="position: relative;">
+              <img
+              id="character"
+              class="upper-left"
+              src="images/agents/girl.svg"
+              style="opacity: 0; position: relative; z-index: 1;"
+              />
+            </div>
+            <div id= "row" class="row">
+              <div id="object1">
+                <img
+                  class="object"
+                  data-word-category="dist2"
+                  src="images/objects/car.svg"
+                  style="height: auto; width: 50%; margin-bottom: 50px;"
+                />
+              </div>
+              <div id="object2">
+                <img
+                  class="object"
+                  data-word-category="target"
+                  src="images/objects/mango.svg"
+                  style="height: auto; width: 40%; margin-bottom: 50px;"
+                />
+              </div>
+              <div id="object3">
+                <img
+                  class="object"
+                  data-word-category="dist1"
+                  src="images/objects/parrot.svg"
+                  style="height: auto; width: 50%; margin-bottom: 50px;"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Discourse continuity fourth exposure trial-->
+
+          <div class="flex-sheet trials typic-imp" style="display: none; height: 100%"> 
+            <audio src="audio/N_zm_auge.mp3" muted></audio>
+            <img
+                id="background"
+                src="images/backgrounds/background_task.svg"
+                />
+            <div class="character" style="position: relative;">
+              <img
+              id="character"
+              class="upper-left"
+              src="images/agents/girl.svg"
+              style="opacity: 0; position: relative; z-index: 1;"
+              />
+            </div>
+            <div id= "row" class="row">
+              <div id="object1">
+                <img
+                  class="object"
+                  data-word-category="target"
+                  src="images/objects/orange.svg"
+                  style="height: auto; width: 50%; margin-bottom: 50px;"
+                />
+              </div>
+              <div id="object2">
+                <img
+                  class="object"
+                  data-word-category="dist3"
+                  src="images/objects/rabbit.svg"
+                  style="height: auto; width: 40%; margin-bottom: 50px;"
+                />
+              </div>
+              <div id="object3">
+                <img
+                  class="object"
+                  data-word-category="dist1"
+                  src="images/objects/bus.svg"
+                  style="height: auto; width: 50%; margin-bottom: 50px;"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Discourse continuity fifth exposure trial-->
+
+          <div class="flex-sheet trials typic-imp" style="display: none; height: 100%"> 
+            <audio src="audio/N_zm_auge.mp3" muted></audio>
+            <img
+                id="background"
+                src="images/backgrounds/background_task.svg"
+                />
+            <div class="character" style="position: relative;">
+              <img
+              id="character"
+              class="upper-left"
+              src="images/agents/girl.svg"
+              style="opacity: 0; position: relative; z-index: 1;"
+              />
+            </div>
+            <div id= "row" class="row">
+              <div id="object1">
+                <img
+                  class="object"
+                  data-word-category="dist2"
+                  src="images/objects/chicken.svg"
+                  style="height: auto; width: 50%; margin-bottom: 50px;"
+                />
+              </div>
+              <div id="object2">
+                <img
+                  class="object"
+                  data-word-category="dist3"
+                  src="images/objects/airplane.svg"
+                  style="height: auto; width: 60%; margin-bottom: 50px;"
+                />
+              </div>
+              <div id="object3">
+                <img
+                  class="object"
+                  data-word-category="target"
+                  src="images/objects/banana.svg"
+                  style="height: auto; width: 50%; margin-bottom: 50px;"
+                />
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- end of main-flex-sheet -->
+        </div>
+        <svg
+          id="svg"
+          xmlns="http://www.w3.org/2000/svg"
+          width="10%"
+          height="10%"
+          viewBox="0 0 394.79 394.79"
+        >
+          <g id="speaker" visibility="hidden">
+            <circle
+              id="speaker-circle"
+              cx="197.4"
+              cy="197.4"
+              r="197.4"
+              fill="#006c66"
+              fill-opacity="0.6"
+            />
+            <g id="speaker-sign">
+              <path
+                d="M728.7,1341.46a8.92,8.92,0,0,0-9.11.35l-80.12,52H609.86a8.91,8.91,0,0,0-8.91,8.91v78.09a8.91,8.91,0,0,0,8.91,8.91h29.61l80.12,52a8.91,8.91,0,0,0,13.77-7.47v-185A8.9,8.9,0,0,0,728.7,1341.46Z"
+                transform="translate(-532.7 -1240.32)"
+                fill="#fff"
+              />
+              <path
+                d="M758.17,1504.85a6.24,6.24,0,0,0,2.26-.43c20.41-7.92,34.12-32.41,34.12-60.93,0-25.23-11.11-48-28.32-58.13a6.25,6.25,0,1,0-6.32,10.78c13.45,7.89,22.15,26.47,22.15,47.35,0,23-10.76,43.3-26.16,49.28a6.25,6.25,0,0,0,2.27,12.08Z"
+                transform="translate(-532.7 -1240.32)"
+                fill="#fff"
+              />
+              <path
+                d="M774.48,1530.91a6.2,6.2,0,0,0,2.26-.43c28.67-11.13,48.69-47.14,48.69-87.57,0-36.37-15.9-69.19-40.51-83.61a6.25,6.25,0,0,0-6.32,10.79c20.86,12.22,34.34,40.8,34.34,72.82,0,35.39-16.75,66.61-40.72,75.92a6.25,6.25,0,0,0,2.26,12.08Z"
+                transform="translate(-532.7 -1240.32)"
+                fill="#fff"
+              />
+              <path
+                d="M791.28,1555.75a6.32,6.32,0,0,1-2.29-12.21c32.65-12.67,55.45-54.23,55.45-101.07,0-42.22-18.2-80.16-46.36-96.67a6.31,6.31,0,1,1,6.38-10.89c32,18.72,52.61,60.94,52.61,107.56,0,51.93-26.11,98.33-63.5,112.85A6.36,6.36,0,0,1,791.28,1555.75Z"
+                transform="translate(-532.7 -1240.32)"
+                fill="#fff"
+              />
+            </g>
+          </g>
+        </svg>
+      
+      
+        <div class="button-center-wrapper">
+          <button type="button" class="custom-button" id="famgame-button" disabled>
+            <span><strong>CONTINUE</strong></span>
+          </button>
+        </div>        
+        <!-- <a href="https://www.eva.mpg.de/imprint/" target="_blank">Impressum</a> -->
+       <!-- end flex-item -->
+      </div>
+     <!-- end flex-wrapper -->
+    </div>
+  </body>
+</html>

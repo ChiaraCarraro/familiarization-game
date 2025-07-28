@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="./logos/cipcip.svg" />
+    <link rel="icon" href="./logos/cipcip.svg" type="image/svg+xml" />
+    <title>FAMILIARIZATION GAME</title>
+
+    <!-- User Style/JavaScript -->
+    <script src="./index.js" type="module" defer></script>
+    <!-- <link rel="stylesheet" href="index.css" /> -->
+  </head>
+
+  <body>
+    <div id="flex-wrapper">
+      <div class="flex-item">
+        <br />
+
+        <h1 class="heading">
+          FAMILIARIZATION GAME<br />
+          <h2 class="heading" id="heading-2">Game created to familiarize children with an item selection task on a tablet.</h2><br />
+        </h1>
+
+        <!-- <p>
+          Zitation: <br />
+        </p> -->
+
+        <br />
+        <hr style="width: 100%; text-align: left; margin-left: 0" />
+        <br />
+
+        <p>
+          <strong>
+            Please enter a name or pseudonym here:
+          </strong>
+        </p>
+
+        <div class="input-field">
+          <input
+            type="text"
+            maxlength="8"
+            id="participant-id"
+            name="participant-id"
+          />
+        </div>
+        <div id="id-counter">0 / 8</div>
+
+        <br />
+
+        <p>
+          <strong> Do you want to start the video recording? </strong>
+        </p>
+
+        <label class="radio-label">
+          <input type="radio" name="webcam-options" value="true" />
+          Yes
+        </label>
+
+        <label class="radio-label">
+          <input type="radio" name="webcam-options" value="false" checked />
+          No
+        </label>
+
+        <br />
+        <br />
+
+        <p style="color: hsl(199, 100%, 21%)">
+          <strong>
+            <em>
+               The data will be saved as a .json file (and,
+               if selected, the video as a .webm video file) on your device
+               in the Downloads folder after completion of the study. A copy 
+               of the data will also be sent to our server for further analysis.
+              <br>
+              <br>
+              Graphics and design elements on this website include resources 
+              from <a href="https://www.svgrepo.com/">SVGRepo</a>, 
+              <a href="https://www.flaticon.com/">Flaticon</a> and 
+              <a href="https://www.freepik.com/">Freepik</a>, 
+              which are used under the free licence with attribution required.
+              Some content may have been edited or adapted 
+            </em></strong
+          >
+        </p>
+
+        <br />
+
+        <div class="button-center-wrapper">
+          <button
+            type="button"
+            class="custom-button"
+            id="start-button"
+          >
+            <span><strong>Let's start!</strong></span>
+          </button>
+        </div>
+
+        <br />
+        <hr style="width: 100%; text-align: left; margin-left: 0" />
+        <br />
+          
+        <img id="logo-lueneluetten" src="./logos/lueneluetten_logo.png" style="width: 30%;" />
+        <img id="logo-leuphana" src="./logos/leuphana.svg" style="width: 30%; height: 50%; margin-bottom: 5%;" />
+
+
+        <br />
+        <br />
+
+        <a href="https://lueneluetten.web.leuphana.de/wordpress/" target="_blank"
+          >Impressum</a
+        >
+      </div>
+    </div>
+  </body>
+</html>

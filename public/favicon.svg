@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 903.25 903.25">
+  <!-- Generator: Adobe Illustrator 29.6.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 9)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #4d4d4d;
+      }
+
+      .st1 {
+        fill: url(#radial-gradient);
+      }
+
+      .st2 {
+        fill: #2669b3;
+        font-family: ComicSansMS-Bold, 'Comic Sans MS';
+        font-size: 150px;
+        font-weight: 700;
+        isolation: isolate;
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="419.07" cy="430.79" fx="419.07" fy="430.79" r="423.28" gradientTransform="translate(-1.16 -.21) scale(1.08 1.05)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".1" stop-color="#fefcf9"/>
+      <stop offset=".24" stop-color="#fff"/>
+      <stop offset=".4" stop-color="#d7eff8"/>
+      <stop offset=".57" stop-color="#c5e8f3"/>
+      <stop offset=".76" stop-color="#8ed8f8"/>
+      <stop offset=".94" stop-color="#4c8fcc"/>
+      <stop offset="1" stop-color="#3a58a8"/>
+    </radialGradient>
+  </defs>
+  <ellipse class="st1" cx="451.62" cy="451.72" rx="451.63" ry="449.53"/>
+  <path class="st0" d="M411.42,112.19c133.25-9.15,299.78,30.87,368.4,176.57,47.95,101.83,31.79,238.85-34.33,325.15-103.7,135.35-281.59,163.51-427.69,118.53-32.37,19.59-75.69,52.45-112.05,58.95-48.08,8.59-22.63-47.39-16.39-73.4,2.01-8.38,12.04-50.35,10.91-55.02-14.1-16.91-31.55-30.38-45.38-48.14-72.86-93.51-78.19-248.12-17.1-350.91,57.58-96.87,174.85-144.96,273.64-151.75v.02ZM207.24,757.63c38.16-12.49,71.07-38.59,105.56-59.96,129.89,40.44,275.41,28.89,381.89-72.91,105.05-100.43,115.53-284.5,10.37-390.3-138.11-138.94-480.97-127.63-561.51,87.05-39,103.95-17.39,226.54,58.19,299.6,7.21,6.97,26.96,19.42,28.67,29.1,1.23,6.97-3.66,27.75-5.23,36.13-4.51,24.12-10.65,48.14-17.94,71.28h0Z"/>
+  <text class="st2" transform="translate(164.51 491.35)"><tspan x="0" y="0">famgame</tspan></text>
+</svg>

@@ -1,0 +1,12 @@
+# Prevent direct access to all files
+
+<FilesMatch "\.(csv|webm)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+
+# Allow access from localhost or server-side scripts
+
+<FilesMatch ".\*">
+Allow from 127.0.0.1
+</FilesMatch>
