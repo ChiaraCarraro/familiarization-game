@@ -17,7 +17,12 @@ let studyChoices;
 if (storedChoices) {
   studyChoices = JSON.parse(storedChoices);
 } else {
-  console.error("No data found in local storage");
+  // fallback: get from URL if localStorage is empty
+  const urlParams = new URLSearchParams(window.location.search);
+  studyChoices = {
+    ID: urlParams.get("ID") || "testID",
+    webcam: urlParams.get("webcam") || "false",
+  };
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -42,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
       subjID: studyChoices.ID || "testID",
       order: window.location.pathname.split("/").pop().replace(".html", ""),
       touchscreen: checkForTouchscreen(),
-      webcam: studyChoices.webcam || false,
+      webcam: String(studyChoices.webcam).toLowerCase() === "true",
     },
     data: [],
   };
@@ -196,58 +201,6 @@ document.addEventListener("DOMContentLoaded", function () {
       studyChoices.ID = responseLog.meta.subjID;
       window.location.href = `./goodbye.html`;
       
-    }
-
-    // Story
-
-    if (trialNr === 1) {
-      const images = [
-        "images/backgrounds/start_1_waving.svg",
-        "images/backgrounds/start_1.svg",
-        "images/backgrounds/start_2.svg",
-        "images/backgrounds/start_3.svg",
-        "images/backgrounds/start_4.svg",
-      ];
-
-      let currentIndex = 0;
-      const imgElement = document.getElementById("background");
-      const ContinueStar = document.getElementById("continue-star");
-
-      function showNextImage() {
-        if (currentIndex <= images.length) {
-          imgElement.src = images[currentIndex];
-          if (
-            images[currentIndex] === "images/backgrounds/start_1_waving.svg"
-          ) {
-            setTimeout(showNextImage, 3000);
-          } else if (
-            images[currentIndex] === "images/backgrounds/start_1.svg"
-          ) {
-            setTimeout(showNextImage, 2500);
-          } else if (
-            images[currentIndex] === "images/backgrounds/start_2.svg"
-          ) {
-            setTimeout(showNextImage, 6000);
-          } else if (
-            images[currentIndex] === "images/backgrounds/start_3.svg"
-          ) {
-            setTimeout(showNextImage, 9000);
-          } else if (
-            images[currentIndex] === "images/backgrounds/start_4.svg"
-          ) {
-            ContinueStar.style.opacity = "1";
-          }
-
-          currentIndex++;
-        }
-      }
-
-      showNextImage(); // Start the slideshow
-
-      button.addEventListener("click", handleContinueClick, {
-        capture: false,
-        once: true,
-      });
     }
 
     const currentTrial = document.getElementById(`trial${trialNr}`);

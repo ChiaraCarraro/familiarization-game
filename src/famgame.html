@@ -45,6 +45,10 @@
           </p>
 
           <p>
+            If you gave your permission to record the video, remember to allow
+            the browser to access the camera and microphone (most likely a pop-up will come out).
+          </p>
+          <p>
             Please click on "CONTINUE" now to activate full screen mode.
           </p>
         </h2>
@@ -86,58 +90,6 @@
               />
           </div>          
 
-          <!-- dist1: semantic distractor, dist2: phonological, dist3: unrelated -->
-          <div class="flex-sheet trials" style="display: none; height: 100%"> <!-- sistemare!!-->
-            <audio src="audio/start-audio.mp3"></audio>
-            <img
-                id="background"
-                src=""
-                style="opacity: 1; 
-                height: 100vh; 
-                width: 100%; 
-                margin-top: 0; 
-                position: absolute; 
-                top: 0; 
-                left: 0; 
-                z-index: -1;"
-            />
-            <div class="character" style="position: relative;">
-              <img
-              id="character"
-              class="upper-left"
-              src="images/agents/girl.svg"
-              style="opacity: 0; position: relative; z-index: 1;"
-              />
-            </div>
-            <div class="row">
-              <div id="object1">
-                <img
-                  class="object"
-                  data-word-category="dist2"
-                  src="images/objects/apple.svg"
-                  style="opacity: 0;"
-                />
-              </div>
-              <div id="object2">
-                <img
-                  id="continue-star"
-                  class="object"
-                  data-word-category="dist3"
-                  src="images/objects/star.svg"
-                  style="opacity: 0;"
-                />
-              </div>
-              <div id="object3">
-                <img
-                  class="object"
-                  data-word-category="dist1"
-                  src="images/objects/turtle.svg"
-                  style="opacity: 0;"
-                />
-              </div>
-            </div>
-              
-          </div>
 
           <!-- FAMILIARIZATION TRIALS -->
 
@@ -146,7 +98,7 @@
             <audio src="audio/N_zm_auge.mp3" muted></audio>
             <img
                 id="background"
-                src="images/backgrounds/background_task.svg"
+                src="images/backgrounds/background_task_Kenya.svg"
                 />
             <div class="character" style="position: relative;">
               <img
@@ -187,7 +139,7 @@
             <audio src="audio/N_zm_auge.mp3" muted></audio>
             <img
                 id="background"
-                src="images/backgrounds/background_task.svg"
+                src="images/backgrounds/background_task_Kenya.svg"
                 />
             <div class="character" style="position: relative;">
               <img
@@ -222,56 +174,12 @@
             </div>
           </div>
 
-          <div class="flex-sheet trials adhocimp-ball" style="display: none; height: 100%"> 
-            <audio src="audio/N_zm_auge.mp3" muted></audio>
-            <img
-                id="background"
-                src="images/backgrounds/background_task.svg"
-                />
-            <div class="character" style="position: relative;">
-              <img
-              id="character"
-              class="upper-left"
-              src="images/agents/girl.svg"
-              style="opacity: 0; position: relative; z-index: 1;"
-              />
-            </div>
-            <div id= "row" class="row">
-              <div id="object1">
-                <img
-                  class="object"
-                  data-word-category="dist2"
-                  src="images/objects/boy_B_shouting.gif"
-                  style="height: auto; width: 80%; margin-bottom: 10vh;"
-                />
-              </div>
-              <div id="object2">
-                <img
-                  class="object"
-                  data-word-category="dist3"
-                  src="images/objects/boy_C_running.gif"
-                  style="height: auto; width: 80%; margin-bottom: 10vh;"
-                />
-              </div>
-              <div id="object3">
-                <img
-                  class="object"
-                  data-word-category="target"
-                  src="images/objects/boy_A_novel1.gif"
-                  style="height: auto; width: 80%; margin-bottom: 10vh;"
-                />
-              </div>
-            </div>
-          </div>
-
-          
-          <!-- TYPICALITY IMPLICATURE-->
 
           <div class="flex-sheet trials typic-imp" style="display: none; height: 100%"> 
             <audio src="audio/N_zm_auge.mp3" muted></audio>
             <img
                 id="background"
-                src="images/backgrounds/background_task.svg"
+                src="images/backgrounds/background_task_Kenya.svg"
                 />
             <div class="character" style="position: relative;">
               <img
@@ -287,7 +195,6 @@
                   class="object"
                   data-word-category="dist2"
                   src="images/objects/glass.svg"
-                  style="height: auto; width: 50%; margin-bottom: 50px;"
                 />
               </div>
               <div id="object2">
@@ -295,7 +202,6 @@
                   class="object"
                   data-word-category="target"
                   src="images/objects/balloon.svg"
-                  style="height: auto; width: 50%; margin-bottom: 50px;"
                 />
               </div>
               <div id="object3">
@@ -303,7 +209,6 @@
                   class="object"
                   data-word-category="dist1"
                   src="images/objects/normal_bottle.svg"
-                  style="height: auto; width: 40%; margin-bottom: 50px;"
                 />
               </div>
             </div>
@@ -313,7 +218,7 @@
             <audio src="audio/N_zm_auge.mp3" muted></audio>
             <img
                 id="background"
-                src="images/backgrounds/background_task.svg"
+                src="images/backgrounds/background_task_Kenya.svg"
                 />
             <div class="character" style="position: relative;">
               <img
@@ -329,7 +234,6 @@
                   class="object"
                   data-word-category="dist2"
                   src="images/objects/cat.svg"
-                  style="height: auto; width: 50%; margin-bottom: 50px;"
                 />
               </div>
               <div id="object2">
@@ -337,7 +241,6 @@
                   class="object"
                   data-word-category="target"
                   src="images/objects/watermelon.svg"
-                  style="height: auto; width: 40%; margin-bottom: 50px;"
                 />
               </div>
               <div id="object3">
@@ -345,7 +248,6 @@
                   class="object"
                   data-word-category="dist1"
                   src="images/objects/helicopter.svg"
-                  style="height: auto; width: 50%; margin-bottom: 50px;"
                 />
               </div>
             </div>
@@ -358,7 +260,7 @@
             <audio src="audio/N_zm_auge.mp3" muted></audio>
             <img
                 id="background"
-                src="images/backgrounds/background_task.svg"
+                src="images/backgrounds/background_task_Kenya.svg"
                 />
             <div class="character" style="position: relative;">
               <img
@@ -374,7 +276,6 @@
                   class="object"
                   data-word-category="dist2"
                   src="images/objects/turtle.svg"
-                  style="height: auto; width: 50%; margin-bottom: 50px;"
                 />
               </div>
               <div id="object2">
@@ -382,7 +283,6 @@
                   class="object"
                   data-word-category="dist3"
                   src="images/objects/motorcycle.svg"
-                  style="height: auto; width: 40%; margin-bottom: 50px;"
                 />
               </div>
               <div id="object3">
@@ -390,7 +290,6 @@
                   class="object"
                   data-word-category="target"
                   src="images/objects/apple.svg"
-                  style="height: auto; width: 50%; margin-bottom: 50px;"
                 />
               </div>
             </div>
@@ -402,7 +301,7 @@
             <audio src="audio/N_zm_auge.mp3" muted></audio>
             <img
                 id="background"
-                src="images/backgrounds/background_task.svg"
+                src="images/backgrounds/background_task_Kenya.svg"
                 />
             <div class="character" style="position: relative;">
               <img
@@ -418,7 +317,6 @@
                   class="object"
                   data-word-category="dist2"
                   src="images/objects/car.svg"
-                  style="height: auto; width: 50%; margin-bottom: 50px;"
                 />
               </div>
               <div id="object2">
@@ -426,7 +324,6 @@
                   class="object"
                   data-word-category="target"
                   src="images/objects/mango.svg"
-                  style="height: auto; width: 40%; margin-bottom: 50px;"
                 />
               </div>
               <div id="object3">
@@ -434,7 +331,6 @@
                   class="object"
                   data-word-category="dist1"
                   src="images/objects/parrot.svg"
-                  style="height: auto; width: 50%; margin-bottom: 50px;"
                 />
               </div>
             </div>
@@ -446,7 +342,7 @@
             <audio src="audio/N_zm_auge.mp3" muted></audio>
             <img
                 id="background"
-                src="images/backgrounds/background_task.svg"
+                src="images/backgrounds/background_task_Kenya.svg"
                 />
             <div class="character" style="position: relative;">
               <img
@@ -462,7 +358,6 @@
                   class="object"
                   data-word-category="target"
                   src="images/objects/orange.svg"
-                  style="height: auto; width: 50%; margin-bottom: 50px;"
                 />
               </div>
               <div id="object2">
@@ -470,7 +365,6 @@
                   class="object"
                   data-word-category="dist3"
                   src="images/objects/rabbit.svg"
-                  style="height: auto; width: 40%; margin-bottom: 50px;"
                 />
               </div>
               <div id="object3">
@@ -478,7 +372,6 @@
                   class="object"
                   data-word-category="dist1"
                   src="images/objects/bus.svg"
-                  style="height: auto; width: 50%; margin-bottom: 50px;"
                 />
               </div>
             </div>
@@ -490,7 +383,7 @@
             <audio src="audio/N_zm_auge.mp3" muted></audio>
             <img
                 id="background"
-                src="images/backgrounds/background_task.svg"
+                src="images/backgrounds/background_task_Kenya.svg"
                 />
             <div class="character" style="position: relative;">
               <img
@@ -506,7 +399,6 @@
                   class="object"
                   data-word-category="dist2"
                   src="images/objects/chicken.svg"
-                  style="height: auto; width: 50%; margin-bottom: 50px;"
                 />
               </div>
               <div id="object2">
@@ -514,7 +406,6 @@
                   class="object"
                   data-word-category="dist3"
                   src="images/objects/airplane.svg"
-                  style="height: auto; width: 60%; margin-bottom: 50px;"
                 />
               </div>
               <div id="object3">
@@ -522,7 +413,6 @@
                   class="object"
                   data-word-category="target"
                   src="images/objects/banana.svg"
-                  style="height: auto; width: 50%; margin-bottom: 50px;"
                 />
               </div>
             </div>
